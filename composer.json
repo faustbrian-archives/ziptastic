@@ -1,7 +1,7 @@
 {
     "name": "faustbrian/ziptastic-php-client",
     "description": "A Ziptastic Client for PHP",
-    "keywords": ["api", "faustbrian", "faustbrian-ziptastic", "ziptastic", "Brian Faust", "faustbrian"],
+    "keywords": ["api", "ziptastic", "Brian Faust", "faustbrian"],
     "license": "MIT",
     "authors": [{
         "name": "Brian Faust",
