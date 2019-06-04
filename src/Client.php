@@ -5,15 +5,15 @@ declare(strict_types=1);
 /*
  * This file is part of Ziptastic PHP Client.
  *
- * (c) Brian Faust <hello@brianfaust.me>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\Ziptastic;
+namespace Plients\Ziptastic;
 
-use BrianFaust\Http\Http;
+use Plients\Http\Http;
 
 class Client
 {
@@ -37,7 +37,7 @@ class Client
      *
      * @param string $name
      *
-     * @return \BrianFaust\Ziptastic\API\AbstractAPI
+     * @return \Plients\Ziptastic\API\AbstractAPI
      */
     public function api(string $name): API\AbstractAPI
     {
@@ -45,7 +45,7 @@ class Client
             'x-key' => $this->key,
         ]);
 
-        $class = "BrianFaust\\Ziptastic\\API\\{$name}";
+        $class = "Plients\\Ziptastic\\API\\{$name}";
 
         return new $class($client);
     }

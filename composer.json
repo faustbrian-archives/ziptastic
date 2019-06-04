@@ -1,13 +1,19 @@
 {
-    "name": "faustbrian/ziptastic-php-client",
+    "name": "plients/ziptastic",
     "description": "A Ziptastic Client for PHP",
-    "keywords": ["api", "http", "ziptastic"],
+    "keywords": [
+        "api",
+        "http",
+        "ziptastic"
+    ],
     "license": "MIT",
-    "authors": [{
-        "name": "Brian Faust",
-        "email": "hello@brianfaust.me",
-        "homepage": "https://brianfaust.me"
-    }],
+    "authors": [
+        {
+            "name": "Brian Faust",
+            "email": "hello@basecode.sh",
+            "homepage": "https://basecode.sh"
+        }
+    ],
     "require": {
         "php": "^7.1",
         "faustbrian/http": "^1.0"
@@ -18,12 +24,12 @@
     },
     "autoload": {
         "psr-4": {
-            "BrianFaust\\Ziptastic\\": "src"
+            "Plients\\Ziptastic\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "BrianFaust\\Tests\\Ziptastic\\": "tests"
+            "Plients\\Tests\\Ziptastic\\": "tests"
         }
     },
     "config": {

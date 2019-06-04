@@ -5,15 +5,15 @@ declare(strict_types=1);
 /*
  * This file is part of Ziptastic PHP Client.
  *
- * (c) Brian Faust <hello@brianfaust.me>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\Ziptastic\API;
+namespace Plients\Ziptastic\API;
 
-use BrianFaust\Http\HttpResponse;
+use Plients\Http\HttpResponse;
 
 class Location extends AbstractAPI
 {
@@ -21,7 +21,7 @@ class Location extends AbstractAPI
      * @param int    $zipcode
      * @param string $country
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function forward(int $zipcode, $country = 'US'): HttpResponse
     {
@@ -32,7 +32,7 @@ class Location extends AbstractAPI
      * @param int $latitude
      * @param int $longitude
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function reverse(int $latitude, int $longitude): HttpResponse
     {
